@@ -1,5 +1,5 @@
 export const prepareMovies = (movies, { query = '' }) => {
-  const normalizedQuery = (query || '').trim().toLocaleLowerCase();
+  const normalizedQuery = (query || '').trim().toLowerCase();
 
   if (!normalizedQuery) {
     return movies;
